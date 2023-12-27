@@ -1,0 +1,19 @@
+\doxysection{Camera.\+h}
+\hypertarget{_camera_8h_source}{}\label{_camera_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}Player.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}const.h"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_camera}{Camera}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_player}{Player}}}
+\DoxyCodeLine{00010\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_camera}{Camera}}(sf::Vector2f\ position,\ \textcolor{keywordtype}{float}\ fieldOfView\ =\ (pi\ /\ 2));}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{void}\ draw(sf::RenderTarget\&\ window)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_camera_a90d5f355217a6d30d1f07a1af315d58c}{setFieldOfView}}(\textcolor{keywordtype}{float}\ angel);}
+\DoxyCodeLine{00016\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{float}\ \_direction\ =\ 0;}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{float}\ \_fieldOfView;}
+\DoxyCodeLine{00021\ \};}
+
+\end{DoxyCode}

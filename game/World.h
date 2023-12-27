@@ -1,12 +1,17 @@
 #pragma once
 #include <map>
 #include <memory>
+#include "Interface.h"
 #include "Object2D.h"
 
-class World
+/*!
+* \brief all visible objects forming the game world
+*/
+
+class World : public IDrawObj
 {
 public:
-	void draw(sf::RenderTarget& window);
+	void draw(sf::RenderTarget& window) override;
 	const std::map<std::string, std::shared_ptr<Object2D>>& getObjects() const;
 	std::map<std::string, std::shared_ptr<Object2D>>& getObjects();
 

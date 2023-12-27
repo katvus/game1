@@ -1,6 +1,10 @@
 #pragma once
 #include "Object2D.h"
 
+/*!
+* \brief object which can drawing as circle
+*/
+
 class Circle : public Object2D
 {
 public:

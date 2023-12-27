@@ -2,6 +2,10 @@
 #include "Circle.h"
 #include "const.h"
 
+/*!
+* \brief describe player
+*/
+
 class Player : public Circle
 {
 public:

@@ -1,6 +1,6 @@
 #include"Player.h"
 
-Player::Player(sf::Vector2f position) : Circle(COLLISION_DISTANCE, position)
+Player::Player(sf::Vector2f position) : Circle(collision_distance, position)
 {
 }
 

@@ -1,0 +1,30 @@
+\doxysection{Object2\+D.\+h}
+\hypertarget{_object2_d_8h_source}{}\label{_object2_d_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Interface.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}ObjectType.h"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_object2_d}{Object2D}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_i_draw_obj}{IDrawObj}}}
+\DoxyCodeLine{00011\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_object2_d_acd14ddac8c8a97ac8719adca0d4c26c8}{Object2D}}(sf::Vector2f\ position\ =\ \{\ 0,0\ \},\ sf::Vector2f\ movement\ =\ \{\ 0,0\ \});}
+\DoxyCodeLine{00016\ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_object2_d_af0b5fed92821ba6b18c35f277107d453}{x}}()\ \textcolor{keyword}{const};\ }
+\DoxyCodeLine{00018\ \ \ \ \ [[nodiscard]]\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_object2_d_a7068547206823417633e476959a137d3}{y}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00020\ \ \ \ \ [[nodiscard]]\ sf::Vector2f\ \mbox{\hyperlink{class_object2_d_ae056c5dc4e3e6e9ee459a420ce080201}{getPosition}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_object2_d_ad2eafcaa854ba4fda5828fdda07bda9f}{setPosition}}(sf::Vector2f\ position);\ }
+\DoxyCodeLine{00023\ \ \ \ \ [[nodiscard]]\ std::string\ getName()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ setName(std::string\ name);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{virtual}\ ObjectType\ \mbox{\hyperlink{class_object2_d_ae74326559369a4740be99ea456540a16}{type}}()\ =\ 0;\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ draw(sf::RenderTarget\&\ window)\ =\ 0;}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00032\ \ \ \ \ sf::Vector2f\ \mbox{\hyperlink{class_object2_d_ab6285aff29e47373263aa7041b1f0e4b}{\_position}};\ }
+\DoxyCodeLine{00034\ \ \ \ \ sf::Vector2f\ \mbox{\hyperlink{class_object2_d_ac22071dbadc891bd4aceaaec132a963f}{\_movement}};}
+\DoxyCodeLine{00035\ \ \ \ \ std::string\ \_name;}
+\DoxyCodeLine{00036\ \};}
+
+\end{DoxyCode}

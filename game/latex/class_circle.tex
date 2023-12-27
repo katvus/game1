@@ -1,0 +1,94 @@
+\doxysection{Circle Class Reference}
+\hypertarget{class_circle}{}\label{class_circle}\index{Circle@{Circle}}
+
+
+object which can drawing as circle  
+
+
+
+
+{\ttfamily \#include $<$Circle.\+h$>$}
+
+Inheritance diagram for Circle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_circle}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_circle_a428077fc024fc6bc3a4179c69f6bcee6}\label{class_circle_a428077fc024fc6bc3a4179c69f6bcee6} 
+{\bfseries Circle} (float radius, sf\+::\+Vector2f position=\{ 0, 0 \}, sf\+::\+Vector2f movement=\{ 0, 0 \})
+\item 
+void \mbox{\hyperlink{class_circle_a968b31f9309f6962bdf134317b01eafd}{draw}} (sf\+::\+Render\+Target \&window) override
+\item 
+virtual Object\+Type \mbox{\hyperlink{class_circle_a010373e48a97c8473816a03025d32181}{type}} () override
+\begin{DoxyCompactList}\small\item\em show the type of the object \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_object2_d}{Object2D}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Object2D} (sf\+::\+Vector2f position=\{ 0, 0 \}, sf\+::\+Vector2f movement=\{ 0, 0 \})
+\begin{DoxyCompactList}\small\item\em creating an object by setting the current coordinates and coordinates of the position where it is moving \end{DoxyCompactList}\item 
+float {\bfseries x} () const
+\begin{DoxyCompactList}\small\item\em get object coordinate along the abscissa axis \end{DoxyCompactList}\item 
+float {\bfseries y} () const
+\begin{DoxyCompactList}\small\item\em get object coordinate along the ordinate axis \end{DoxyCompactList}\item 
+sf\+::\+Vector2f {\bfseries get\+Position} () const
+\begin{DoxyCompactList}\small\item\em get object coordinates \end{DoxyCompactList}\item 
+void {\bfseries set\+Position} (sf\+::\+Vector2f position)
+\begin{DoxyCompactList}\small\item\em set object coordinates \end{DoxyCompactList}\item 
+std\+::string {\bfseries get\+Name} () const
+\item 
+void {\bfseries set\+Name} (std\+::string name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_object2_d}{Object2D}}}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Vector2f {\bfseries \+\_\+position}
+\begin{DoxyCompactList}\small\item\em current coordinates \end{DoxyCompactList}\item 
+sf\+::\+Vector2f {\bfseries \+\_\+movement}
+\begin{DoxyCompactList}\small\item\em coordinates of the position where object is moving \end{DoxyCompactList}\item 
+std\+::string {\bfseries \+\_\+name}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+object which can drawing as circle 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_circle_a968b31f9309f6962bdf134317b01eafd}\label{class_circle_a968b31f9309f6962bdf134317b01eafd} 
+\index{Circle@{Circle}!draw@{draw}}
+\index{draw@{draw}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Circle\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_object2_d}{Object2D}}.
+
+\Hypertarget{class_circle_a010373e48a97c8473816a03025d32181}\label{class_circle_a010373e48a97c8473816a03025d32181} 
+\index{Circle@{Circle}!type@{type}}
+\index{type@{type}!Circle@{Circle}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily Object\+Type Circle\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+show the type of the object 
+
+
+
+Implements \mbox{\hyperlink{class_object2_d_ae74326559369a4740be99ea456540a16}{Object2D}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_player_a24558ee4a120fea237dd25d031639e6e}{Player}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Circle.\+h\item 
+Circle.\+cpp\end{DoxyCompactItemize}

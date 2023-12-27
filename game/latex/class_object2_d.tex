@@ -1,0 +1,93 @@
+\doxysection{Object2D Class Reference}
+\hypertarget{class_object2_d}{}\label{class_object2_d}\index{Object2D@{Object2D}}
+
+
+independent object  
+
+
+
+
+{\ttfamily \#include $<$Object2\+D.\+h$>$}
+
+Inheritance diagram for Object2D\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_object2_d}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_object2_d_acd14ddac8c8a97ac8719adca0d4c26c8}\label{class_object2_d_acd14ddac8c8a97ac8719adca0d4c26c8} 
+{\bfseries Object2D} (sf\+::\+Vector2f position=\{ 0, 0 \}, sf\+::\+Vector2f movement=\{ 0, 0 \})
+\begin{DoxyCompactList}\small\item\em creating an object by setting the current coordinates and coordinates of the position where it is moving \end{DoxyCompactList}\item 
+\Hypertarget{class_object2_d_af0b5fed92821ba6b18c35f277107d453}\label{class_object2_d_af0b5fed92821ba6b18c35f277107d453} 
+float {\bfseries x} () const
+\begin{DoxyCompactList}\small\item\em get object coordinate along the abscissa axis \end{DoxyCompactList}\item 
+\Hypertarget{class_object2_d_a7068547206823417633e476959a137d3}\label{class_object2_d_a7068547206823417633e476959a137d3} 
+float {\bfseries y} () const
+\begin{DoxyCompactList}\small\item\em get object coordinate along the ordinate axis \end{DoxyCompactList}\item 
+\Hypertarget{class_object2_d_ae056c5dc4e3e6e9ee459a420ce080201}\label{class_object2_d_ae056c5dc4e3e6e9ee459a420ce080201} 
+sf\+::\+Vector2f {\bfseries get\+Position} () const
+\begin{DoxyCompactList}\small\item\em get object coordinates \end{DoxyCompactList}\item 
+\Hypertarget{class_object2_d_ad2eafcaa854ba4fda5828fdda07bda9f}\label{class_object2_d_ad2eafcaa854ba4fda5828fdda07bda9f} 
+void {\bfseries set\+Position} (sf\+::\+Vector2f position)
+\begin{DoxyCompactList}\small\item\em set object coordinates \end{DoxyCompactList}\item 
+\Hypertarget{class_object2_d_a7f42c1416879c7ea0ebb933fcb01f349}\label{class_object2_d_a7f42c1416879c7ea0ebb933fcb01f349} 
+std\+::string {\bfseries get\+Name} () const
+\item 
+\Hypertarget{class_object2_d_a0225f417d62be27070c97657a73391de}\label{class_object2_d_a0225f417d62be27070c97657a73391de} 
+void {\bfseries set\+Name} (std\+::string name)
+\item 
+virtual Object\+Type \mbox{\hyperlink{class_object2_d_ae74326559369a4740be99ea456540a16}{type}} ()=0
+\begin{DoxyCompactList}\small\item\em show the type of the object \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_object2_d_ae8272c020320668728b809b16c3f7346}{draw}} (sf\+::\+Render\+Target \&window)=0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_object2_d_ab6285aff29e47373263aa7041b1f0e4b}\label{class_object2_d_ab6285aff29e47373263aa7041b1f0e4b} 
+sf\+::\+Vector2f {\bfseries \+\_\+position}
+\begin{DoxyCompactList}\small\item\em current coordinates \end{DoxyCompactList}\item 
+\Hypertarget{class_object2_d_ac22071dbadc891bd4aceaaec132a963f}\label{class_object2_d_ac22071dbadc891bd4aceaaec132a963f} 
+sf\+::\+Vector2f {\bfseries \+\_\+movement}
+\begin{DoxyCompactList}\small\item\em coordinates of the position where object is moving \end{DoxyCompactList}\item 
+\Hypertarget{class_object2_d_a3fa5ba1ee82e101a1ee6c679474a4e35}\label{class_object2_d_a3fa5ba1ee82e101a1ee6c679474a4e35} 
+std\+::string {\bfseries \+\_\+name}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+independent object 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_object2_d_ae8272c020320668728b809b16c3f7346}\label{class_object2_d_ae8272c020320668728b809b16c3f7346} 
+\index{Object2D@{Object2D}!draw@{draw}}
+\index{draw@{draw}!Object2D@{Object2D}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Object2\+D\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_i_draw_obj}{IDraw\+Obj}}.
+
+\Hypertarget{class_object2_d_ae74326559369a4740be99ea456540a16}\label{class_object2_d_ae74326559369a4740be99ea456540a16} 
+\index{Object2D@{Object2D}!type@{type}}
+\index{type@{type}!Object2D@{Object2D}}
+\doxysubsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily virtual Object\+Type Object2\+D\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+show the type of the object 
+
+
+
+Implemented in \mbox{\hyperlink{class_circle_a010373e48a97c8473816a03025d32181}{Circle}}, \mbox{\hyperlink{class_player_a24558ee4a120fea237dd25d031639e6e}{Player}}, and \mbox{\hyperlink{class_polygon_a87d805e148eb315482a64a54dcc06f5f}{Polygon}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Object2\+D.\+h\item 
+Object2\+D.\+cpp\end{DoxyCompactItemize}

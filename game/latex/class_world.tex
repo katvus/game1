@@ -1,0 +1,65 @@
+\doxysection{World Class Reference}
+\hypertarget{class_world}{}\label{class_world}\index{World@{World}}
+
+
+all visible objects forming the game world  
+
+
+
+
+{\ttfamily \#include $<$World.\+h$>$}
+
+Inheritance diagram for World\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_world}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_world_af15cc2fc9d8dae4c4575e7f120a350ba}{draw}} (sf\+::\+Render\+Target \&window) override
+\item 
+\Hypertarget{class_world_aab8632418097904085cb9a495b9a533e}\label{class_world_aab8632418097904085cb9a495b9a533e} 
+const std\+::map$<$ std\+::string, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_object2_d}{Object2D}} $>$ $>$ \& {\bfseries get\+Objects} () const
+\item 
+\Hypertarget{class_world_a36cd13c52f0e2de32bbc711b1c7fa108}\label{class_world_a36cd13c52f0e2de32bbc711b1c7fa108} 
+std\+::map$<$ std\+::string, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_object2_d}{Object2D}} $>$ $>$ \& {\bfseries get\+Objects} ()
+\item 
+\Hypertarget{class_world_adcab5973fa28d604eef6e2fdd5d61b13}\label{class_world_adcab5973fa28d604eef6e2fdd5d61b13} 
+bool {\bfseries add\+Object} (std\+::string name, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_object2_d}{Object2D}} $>$ object)
+\item 
+\Hypertarget{class_world_a478fe6a54c89ec5284adc47238818aab}\label{class_world_a478fe6a54c89ec5284adc47238818aab} 
+bool {\bfseries remove\+Object} (const std\+::string \&name)
+\item 
+\Hypertarget{class_world_ad2906728a97204ccf597b4dd0bdb4563}\label{class_world_ad2906728a97204ccf597b4dd0bdb4563} 
+bool {\bfseries is\+Empty} (const std\+::string \&name)
+\item 
+\Hypertarget{class_world_a6ab4772cbf0177dfb37afb1b44898ce7}\label{class_world_a6ab4772cbf0177dfb37afb1b44898ce7} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_object2_d}{Object2D}} $>$ {\bfseries find\+Object} (const std\+::string \&name)
+\item 
+\Hypertarget{class_world_a704b28533bf2f459743ece5f6e59cb1f}\label{class_world_a704b28533bf2f459743ece5f6e59cb1f} 
+const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_object2_d}{Object2D}} $>$ {\bfseries find\+Object} (const std\+::string \&name) const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+all visible objects forming the game world 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_world_af15cc2fc9d8dae4c4575e7f120a350ba}\label{class_world_af15cc2fc9d8dae4c4575e7f120a350ba} 
+\index{World@{World}!draw@{draw}}
+\index{draw@{draw}!World@{World}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void World\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Target \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_i_draw_obj}{IDraw\+Obj}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+World.\+h\item 
+World.\+cpp\end{DoxyCompactItemize}

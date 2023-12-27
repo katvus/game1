@@ -1,0 +1,19 @@
+\doxysection{Polygon.\+h}
+\hypertarget{_polygon_8h_source}{}\label{_polygon_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}Object2D.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_polygon}{Polygon}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_object2_d}{Object2D}}}
+\DoxyCodeLine{00007\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00009\ \ \ \ \ \mbox{\hyperlink{class_polygon}{Polygon}}(std::vector<sf::Vector2f>\ points\ =\ \{\},\ sf::Vector2f\ position\ =\ \{0,0\},\ sf::Vector2f\ movement\ =\ \{0,0\});}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ draw(sf::RenderTarget\&\ window)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keyword}{virtual}\ ObjectType\ \mbox{\hyperlink{class_polygon_a87d805e148eb315482a64a54dcc06f5f}{type}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00012\ \ \ \ \ std::vector<sf::Vector2f>\ getPoints()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{void}\ setPoints(std::vector<sf::Vector2f>\ points);}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00017\ \ \ \ \ std::vector<sf::Vector2f>\ \_points;}
+\DoxyCodeLine{00018\ \};}
+
+\end{DoxyCode}

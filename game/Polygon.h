@@ -1,6 +1,8 @@
 #pragma once
 #include "Object2D.h"
-
+/*!
+* \brief object which can drawing as polygon
+*/
 class Polygon : public Object2D
 {
 public:
@@ -11,5 +13,6 @@ public:
 	void setPoints(std::vector<sf::Vector2f> points);
 
 private:
+	/// vertices of the polygon
 	std::vector<sf::Vector2f> _points;
 };
